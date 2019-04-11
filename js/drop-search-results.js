@@ -9,3 +9,8 @@ function animateDropResults(self) {
     drop_list.slideUp(500);
   }
 }
+
+function goToLink(self) {
+  self = $(self);
+  window.location.href = "http://bookworm.loc" + self.children('.link').text();
+}

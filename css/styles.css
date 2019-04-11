@@ -439,6 +439,10 @@ form.search-form input[type="submit"] {
   margin-top: 13px;
   overflow: hidden;
 }
+#main #content #content-head #search-results .result-line:hover {
+  cursor: pointer;
+  background: rgba(0, 150, 136, 0.1);
+}
 #main #content #content-head #search-results .result-line:first-child { /* Исключает first-child */
   margin-top: 0;
 }
@@ -457,6 +461,9 @@ form.search-form input[type="submit"] {
 }
 #main #content #content-head #search-results .result-line ul li:first-child {
   font-weight: bold;
+}
+#main #content #content-head #search-results .result-line .link {
+  display: none;
 }
 #main #content #content-head #search-results a {
   color: #000;
