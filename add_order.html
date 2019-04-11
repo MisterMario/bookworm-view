@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookWorm.by - Оформление заказа</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="logo">
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        <div id="brand-name">
+          <h1>Book<span>Worm.by</span></h1>
+          <h2>Интернет-магазин книг</h2>
+        </div>
+      </div>
+      <div id="right-part">
+        <div id="mini-profil">
+          <div id="user-profil">
+            <img src="images/icon-man.png" alt="">
+            <div id="user-name">
+              <p>Кирилл</p>
+              <p>Савицкий</p>
+            </div>
+            <form action="" method="post">
+              <input type="button" name="btn-logout">
+            </form>
+          </div>
+        </div>
+        <div id="basket">
+          <div id="inside-basket">
+            <p>500 BYR</p>
+            <img src="images/basket-icon.png" alt="корзина">
+          </div>
+          <div id="count-of-goods">
+            55
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="topmenu">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li>
+          <a href="#" class="">Жанры</a>
+          <div class="drop-down-menu hidden">
+            <ul>
+              <li><a href="#">Классика</a></li>
+              <li><a href="#">Приключения</a></li>
+              <li><a href="#">Фантастика</a></li>
+              <li><a href="#">Детективы</a></li>
+              <li><a href="#">Романы</a></li>
+              <li><a href="#">Сказки</a></li>
+              <li><a href="#">Научная литература</a></li>
+              <li><a href="#">Фэнтэзи</a></li>
+              <li><a href="#">Психология</a></li>
+              <li><a href="#">Справочники</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Популярное</a></li>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="my-contacts.html">Личный кабинет</a></li>
+      </ul>
+    </div>
+    <div id="main">
+      <div id="left-block">
+        <div id="info-block">
+          <div id="info-head">
+            Личный кабинет
+          </div>
+          <div id="info-content">
+            <ul class="personal-cabinet">
+              <li name="my-contacts"><a href="my-contacts.html">Мои контакты</a></li>
+              <li name="my-basket"><a href="cart.html">Моя корзина</a></li>
+              <li name="purchase-history"><a href="purchase_history.html">История заказов</a></li>
+              <li name="control-panel"><a href="#">Панель управления</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="info-block">
+          <div id="info-head">
+            Популярные авторы
+          </div>
+          <div id="info-content">
+            <ul>
+              <li><a href="#">Джоджо Мойес</a></li>
+              <li><a href="#">Достоевский Федор</a></li>
+              <li><a href="#">Жан-Кристоф Гранже</a></li>
+              <li><a href="#">Зигмунд Фрейд</a></li>
+              <li><a href="#">Кокотюха Андрій</a></li>
+              <li><a href="#">Кунин Алексей</a></li>
+              <li><a href="#">Леви Джулия</a></li>
+              <li><a href="#">Носов Николай</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="content-head">
+          <div id="section-name">
+            Оформление заказа
+          </div>
+          <div id="search">
+            <form action="" method="post" class="search-form">
+              <label for="search-string">Поиск по сайту:</label>
+              <input type="text" name="search-string" placeholder="Что-то ищете?">
+              <input type="submit" value="">
+            </form>
+          </div>
+        </div>
+        <div id="content-body">
+          <div id="inside-content-body">
+            <div id="add-order">
+              <div id="dilivery-format" class="rect">
+                <h2>Выберите форму доставки заказа:</h2>
+                <div class="format-selection">
+                  <ul>
+                    <li class="active">Курьером</li>
+                    <li>Почтой</li>
+                    <li>Самовывоз</li>
+                  </ul>
+                </div>
+                <div class="format-description">
+                  Курьерская доставка товаров осуществляется в пределах всей Беларуси.<br />
+                  Стоимость данного способа доставки составляет: 5 руб по Минску и 15 руб по всей Беларуси.<br />
+                  При сумме заказа более 70 руб доставка бесплатна.<br />
+                </div>
+              </div>
+              <div id="personal-data" class="rect">
+                <h2>Введите личные данные</h2>
+                <form action="" method="post">
+                  <div id="error-message">
+                    <div id="message-head">
+                      Ошибка
+                    </div>
+                    <div id="message-content">
+                      Поле имя содержит некорректные символы. Допустимы лишь буквы русского и анлийского алфавита.
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="firstname">Ваше имя: <span>*</span></label>
+                    <div class="input incorrect-value">
+                      <input type="text" name="firstname" placeholder="Андрей" value="АдминЛох228">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="lastname">Ваша фамилия: <span>*</span></label>
+                    <div class="input">
+                      <input type="text" name="lastname" placeholder="Сосновский">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="e-mail">E-mail: <span>*</span></label>
+                    <div class="input">
+                      <input type="text" name="e-mail" placeholder="nikolaisosnovskiy@mail.ru">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="phone">Телефон: <span>*</span></label>
+                    <div class="input">
+                      <input type="text" name="phone" placeholder="+375 (44) 291-36-81">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="region">Область:</label>
+                    <div class="input">
+                      <input type="text" name="region" placeholder="Минская">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="city">Город:</label>
+                    <div class="input">
+                      <input type="text" name="city" placeholder="Солигорск">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="address">Адрес:</label>
+                    <div class="input">
+                      <input type="text" name="address" placeholder="ул. Боярышника, д.78, кв.5">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label for="postcode">Почтовый индекс:</label>
+                    <div class="input">
+                      <input type="text" name="postcode" placeholder="824153">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div id="payment-format" class="rect">
+                <h2>Выберите форму оплаты:</h2>
+                <div class="format-selection">
+                  <ul>
+                    <li>Наличными</li>
+                    <li>Банковской картой</li>
+                    <li class="active">Онлайн-платеж</li>
+                  </ul>
+                </div>
+                <h2>Доступные платежные системы:</h2>
+                <div class="format-description">
+                  <ul class="inline">
+                    <li value="webmoney"></li>
+                    <li value="paypal"></li>
+                    <li value="yandex_money" class="active"></li>
+                    <li value="quwi"></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="time-of-dilivery" class="rect">
+                <div id="dilivery-date">
+                  <h2>Выберите дату доставки:</h2>
+                  <ul class="inline">
+                    <li>ПН<br /><span>5</span></li>
+                    <li>ВТ<br /><span>6</span></li>
+                    <li class="active">СР<br /><span>7</span></li>
+                    <li>ЧТ<br /><span>8</span></li>
+                    <li>ПТ<br /><span>9</span></li>
+                    <li>СБ<br /><span>10</span></li>
+                    <li class="is-impossible">ВС<br /><span>11</span></li>
+                    <li>ПН<br /><span>12</span></li>
+                  </ul>
+                </div>
+                <div id="dilivery-time">
+                  <h2>Выберите время доставки:</h2>
+                  <select name="" id="">
+                    <option value="1">10:00 - 12:00</option>
+                    <option value="2">12:00 - 14:00</option>
+                    <option value="3" selected>14:00 - 16:00</option>
+                    <option value="4">16:00 - 18:00</option>
+                  </select>
+                </div>
+              </div>
+              <div id="result">
+                <div id="sum-total">
+                  <h2>Стоимость заказа: 14 873 BYR</h2>
+                </div>
+                <div id="order-control">
+                  <input type="button" name="place_an_order" value="Подтвердить заказ" class="green-btn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="copyright">
+        <p>© 2018 BookWorm.by</p>
+      </div>
+      <div id="social-networks">
+        <p>Мы в социальных сетях:</p>
+        <ul>
+          <li><a href="#"><img src="images/social-icon-vk.png" alt=""></a></li>
+          <li><a href="#"><img src="images/social-icon-facebook.png" alt=""></a></li>
+          <li><a href="#"><img src="images/social-icon-instagram.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
