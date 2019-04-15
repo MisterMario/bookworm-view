@@ -12,5 +12,5 @@ function animateDropResults(self) {
 
 function goToLink(self) {
   self = $(self);
-  window.location.href = "http://bookworm.loc" + self.children('.link').text();
+  window.location.href = "http://bw.loc" + self.children('.link').text();
 }
