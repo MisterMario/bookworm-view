@@ -1364,6 +1364,30 @@ form.search-form input[type="submit"] {
 #inside-content-body #control-info-blocks.control-block {
   background: url(../images/list.png) center 38px no-repeat;
 }
+/* Информационные сообщения о прчине отсутствия контента на странице */
+#inside-content-body #message-in-content {
+  background-position: center 88px!important;
+  background-repeat: no-repeat!important;
+}
+#inside-content-body #message-in-content p {
+  width: 400px; /* Слишком много текста в одной строке будет выглядеть некрасиво */
+  padding: 222px 0 118px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #009688;
+}
+#inside-content-body #message-in-content.empty-cart {
+  background: url(../images/empty-cart.png);
+}
+#inside-content-body #message-in-content.empty-catalog {
+  background: url(../images/empty-catalog.png);
+}
+#inside-content-body #message-in-content.empty-orders-history {
+  background: url(../images/empty-orders-history.png);
+}
+#inside-content-body #message-in-content.failed-search {
+  background: url(../images/search-icon-for-message.png);
+}
 /* Стилизация радиокнопок */
 #inside-content-body form .form-row .input input[type="radio"] + label {
   letter-spacing: 0;
@@ -1407,29 +1431,6 @@ form.search-form input[type="submit"] {
   position: absolute;
   content: url(../images/checkbox-ok.png);
   margin: -4px 0 0 -2px;
-}
-#inside-content-body #message-in-content {
-  background-position: center 88px!important;
-  background-repeat: no-repeat!important;
-}
-#inside-content-body #message-in-content p {
-  width: 400px; /* Слишком много текста в одной строке будет выглядеть некрасиво */
-  padding: 222px 0 118px 0;
-  margin: 0 auto;
-  text-align: center;
-  color: #009688;
-}
-#inside-content-body #message-in-content.empty-cart {
-  background: url(../images/empty-cart.png);
-}
-#inside-content-body #message-in-content.empty-catalog {
-  background: url(../images/empty-catalog.png);
-}
-#inside-content-body #message-in-content.empty-orders-history {
-  background: url(../images/empty-orders-history.png);
-}
-#inside-content-body #message-in-content.failed-search {
-  background: url(../images/search-icon-for-message.png);
 }
 #error-404 {
   text-align: center;
